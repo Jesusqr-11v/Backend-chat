@@ -1,4 +1,5 @@
 const http = require("http");
+const {PORT} = require("./config.js")
 
 const server = http.createServer();
 
@@ -19,4 +20,4 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3000);
+server.listen(PORT);
